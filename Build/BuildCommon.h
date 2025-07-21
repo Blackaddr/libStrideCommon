@@ -18,7 +18,7 @@ namespace stride {
 static const std::string REGION_MARKER_START = "//!s - START_";
 static const std::string REGION_MARKER_END   = "//!e - END_";
 
-static const std::string PEDALBOARD_APP_NAME = "Designer";
+static const std::string PEDALBOARD_APP_NAME = "STRIDE Studio";
 static const std::string PEDALBOARD_EFFECT_FOLDER = "Effects";
 static const std::string PEDALBOARD_PRESET_FOLDER = "Presets";
 

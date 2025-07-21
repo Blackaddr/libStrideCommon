@@ -46,7 +46,7 @@ enum class EffectCategory : unsigned {
     SYNTH,
     WAH,
     DATAPAK,
-    /* start Designer only categories. Entries below this line are not available to EffectCreator EFX */
+    /* start STRIDE Studio only categories. Entries below this line are not available to EffectCreator EFX */
     INPUT,
     OUTPUT,
     NUM_CATEGORIES
