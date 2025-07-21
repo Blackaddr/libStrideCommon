@@ -1,0 +1,26 @@
+#!/bin/bash
+
+set -e
+pushd .
+cd tools
+
+pushd .
+cd linux_gcc_tools
+./gen_linuxTools.sh
+cp ./target/* ../../
+popd
+
+pushd .
+cd win64_gcc_tools
+./gen_win64Tools.sh
+cp ./target/* ../../
+popd
+
+pushd .
+cd macos_gcc_tools
+./gen_macosTools.sh
+cp ./target/* ../../
+popd
+
+popd
+

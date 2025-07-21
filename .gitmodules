@@ -1,0 +1,12 @@
+[submodule "Resources/tools/linux_arm_gcc_tools"]
+	path = Resources/tools/linux_arm_gcc_tools
+	url = git@github.com:Blackaddr/linux_arm_gcc_tools.git
+[submodule "Resources/tools/linux_aarch64_gcc_tools"]
+	path = Resources/tools/linux_aarch64_gcc_tools
+	url = git@github.com:Blackaddr/linux_aarch64_gcc_tools.git
+[submodule "Resources/tools/macos_arm_gcc_tools"]
+	path = Resources/tools/macos_arm_gcc_tools
+	url = git@github.com:Blackaddr/macos_arm_gcc_tools.git
+[submodule "Resources/tools/win64_arm_gcc_tools"]
+	path = Resources/tools/win64_arm_gcc_tools
+	url = git@github.com:Blackaddr/win64_arm_gcc_tools.git

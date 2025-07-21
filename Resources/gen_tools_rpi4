@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -e
+pushd .
+cd tools
+
+pushd .
+cd linux_aarch64_tools
+./gen_linuxTools.sh
+cp ./target/* ../../
+popd
+
+popd
+
