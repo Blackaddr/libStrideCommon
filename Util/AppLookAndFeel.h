@@ -19,8 +19,10 @@ const juce::Colour BABlue      (22, 58, 62); // #37939e
 const juce::Colour BAWhite (87,87,87); // #dddddd
 const juce::Colour BABlack (0,0,0); // # 000000
 const juce::Colour JuceGrey    (0x32, 0x3e, 0x44);
-const juce::Colour BADarkGrey      (0x30, 0x30, 0x30);
 
+const juce::Colour BALightGrey (0xA8, 0xA9, 0xAD); // #A8A9AD
+const juce::Colour BADarkGrey      (0x30, 0x30, 0x30);
+const juce::Colour BAMediumGrey(0x75, 0x75, 0x75); // #757575
 const juce::Colour BADarkGreyAlpha ((uint8_t)0x30, (uint8_t)0x30, (uint8_t)0x30, 0.9f);
 
 const juce::Colour AppBackground(JuceGrey);
