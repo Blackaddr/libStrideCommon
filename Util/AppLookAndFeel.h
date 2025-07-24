@@ -17,7 +17,7 @@ namespace stride {
 #define GLOBAL_STUFF
 const juce::Colour BABlue      (22, 58, 62); // #37939e
 const juce::Colour BAWhite (87,87,87); // #dddddd
-const juce::Colour BABlack (0,0,0); // # 000000
+const juce::Colour BABlack (0,0,0); // #000000
 const juce::Colour JuceGrey    (0x32, 0x3e, 0x44);
 
 const juce::Colour BALightGrey (0xA8, 0xA9, 0xAD); // #A8A9AD
