@@ -32,6 +32,9 @@ static const std::string INDENT        = "    ";
 static const std::string INDENT2       = INDENT + INDENT;
 static const std::string NEWLINE       = "\n";
 
+constexpr size_t   UID_SIZE_BYTES    = 16;
+constexpr unsigned ENCODE_KEY[stride::UID_SIZE_BYTES] = {3, 5, 1, 4, 10, 7, 2, 6, 11, 13, 12, 15, 8, 14, 0, 9};
+
 static const char EFFECTS_DIR[]            = "Effects";
 static const char PRESETS_DIR[]            = "Presets";
 static const char LOG_DIR[]                = "Logs";
@@ -75,12 +78,6 @@ constexpr char STRIDE_RELEASE_URL[] = "http://www.blackaddr.com/downloads/stride
 
 std::string getCoreVersionString(int major, int minor, int patch);
 
-std::string getDevicesDirectory();
-std::string getDevicesFilePath();
-std::string getDevelDevicesDirectory();
-std::string getDevelDevicesFilePath();
-std::string getProductKeysDirectory();
-std::string getProductKeysFilePath();
 std::string getEfxDatabaseDirectory();
 std::string getEfxDatabaseFilePath();
 std::string getIrDirectory();
@@ -105,6 +102,30 @@ struct SemanticVersion {
     bool isCompatible(const SemanticVersion& targetVersion);
     static SemanticVersion strToSemVersion(const std::string& str);
 };
+
+struct TeensyUid {
+    uint8_t uid[UID_SIZE_BYTES];
+    std::string getHexKey();
+    std::string getAlphaKey();
+    std::string getAlphaKeyPretty();
+    unsigned getProductId();
+    unsigned getRev();
+    bool     isValid();
+    static TeensyUid getUidFromAlphaKey(const std::string& key); // works for both normal and pretty formatted strings
+
+    bool operator==(const TeensyUid& cmp)
+    {
+        bool isEqual = true;
+        for (unsigned i=0; i < UID_SIZE_BYTES; i++) {
+            if (cmp.uid[i] != uid[i]) { isEqual = false; }
+        }
+        return isEqual;
+    }
+};
+
+TeensyUid encodeUid(const TeensyUid& teensyUid);
+TeensyUid encodeUid(const TeensyUid* teensyUidPtr);
+TeensyUid decodeUid(const TeensyUid* teensyUidPtr);
 
 }
 

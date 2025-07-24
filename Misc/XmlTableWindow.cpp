@@ -191,7 +191,7 @@ int XmlTable::writeXmlFile(const std::string& xmlFilename, XmlElement* rootEleme
         }
         return result;
     } else {
-        std::string msg = std::string("An unexpected error occurred with the device key table. It appears to be invalid.");
+        std::string msg = std::string("An unexpected error occurred with the table. It appears to be invalid.");
         errorMessage(msg);
         return FAILURE; 
     }

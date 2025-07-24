@@ -5,19 +5,19 @@ pushd .
 cd tools
 
 pushd .
-cd linux_gcc_tools
+cd linux_arm_gcc_tools
 ./gen_linuxTools.sh
 cp ./target/* ../../
 popd
 
 pushd .
-cd win64_gcc_tools
+cd win64_arm_gcc_tools
 ./gen_win64Tools.sh
 cp ./target/* ../../
 popd
 
 pushd .
-cd macos_gcc_tools
+cd macos_arm_gcc_tools
 ./gen_macosTools.sh
 cp ./target/* ../../
 popd

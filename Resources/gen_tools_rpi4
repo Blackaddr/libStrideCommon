@@ -5,7 +5,7 @@ pushd .
 cd tools
 
 pushd .
-cd linux_aarch64_tools
+cd linux_aarch64_gcc_tools
 ./gen_linuxTools.sh
 cp ./target/* ../../
 popd

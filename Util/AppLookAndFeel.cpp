@@ -16,8 +16,8 @@ using namespace juce;
 namespace stride {
 
 BlackaddrAudioLookAndFeel::BlackaddrAudioLookAndFeel() {
-    setColour(AlertWindow::backgroundColourId, AAPurple);
-    setColour(AlertWindow::outlineColourId, AABlue);
+    setColour(AlertWindow::backgroundColourId, BABlack);
+    setColour(AlertWindow::outlineColourId, BABlue);
 }
 
 void paintBasicWindow(Graphics& g, Component& component, bool isTransparentBackground)
@@ -31,7 +31,7 @@ void paintBasicWindow(Graphics& g, Component& component, bool isTransparentBackg
         g.setColour(Colours::black);
     }
     g.fillAll();
-    g.setColour(AABlue);
+    g.setColour(BABlue);
     g.drawRoundedRectangle(margin, margin, component.getWidth() - 2 * margin, component.getHeight() - 2 * margin, cornerSize, thickness);
 }
 
@@ -98,7 +98,7 @@ void paintAreaWindow(Graphics& g, Component& component, bool isTransparentBackgr
     }
     //g.fillAll();
     g.fillRoundedRectangle(margin, margin, component.getWidth() - 2 * margin, component.getHeight() - 2 * margin, thickness);
-    g.setColour(AABlue);
+    g.setColour(BABlue);
     g.drawRoundedRectangle(margin, margin, component.getWidth() - 2 * margin, component.getHeight() - 2 * margin, cornerSize, thickness);
 }
 
@@ -115,7 +115,7 @@ void paintPopoutWindow(Graphics& g, Component& component, bool isTransparentBack
     }
 
     g.fillRoundedRectangle(margin, margin, component.getWidth() - 2 * margin, component.getHeight() - 2 * margin, cornerSize);
-    g.setColour(AABlue);
+    g.setColour(BABlue);
     g.drawRoundedRectangle(margin, margin, component.getWidth() - 2 * margin, component.getHeight() - 2 * margin, cornerSize, thickness);
 }
 

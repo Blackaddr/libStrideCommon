@@ -174,9 +174,9 @@ public:
 
     void buttonClicked (juce::Button* buttonThatWasClicked) override;
 
-    juce::Colour backgroundColour = AAPurple;
-    juce::Colour borderColour     = AABlue;
-    juce::Colour textColour       = AABlue;
+    juce::Colour backgroundColour = BABlack;
+    juce::Colour borderColour     = BAWhite;
+    juce::Colour textColour       = juce::Colours::white;
 
     juce::TextEditor textEditor;
 
@@ -384,9 +384,9 @@ public:
     void loadFile(const std::string& filePath);
     void setEditorText(std::string& text);
 
-    juce::Colour backgroundColour = stride::AAPurple;
-    juce::Colour borderColour     = stride::AABlue;
-    juce::Colour textColour       = stride::AABlue;
+    juce::Colour backgroundColour = stride::BABlack;
+    juce::Colour borderColour     = stride::BABlue;
+    juce::Colour textColour       = stride::BABlue;
 
     float    borderThicknessRatio = 0.02f;
     float    fontSizeHeightRatio  = 0.2f;

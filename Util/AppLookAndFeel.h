@@ -15,18 +15,17 @@ namespace stride {
 
 #ifndef GLOBAL_STUFF
 #define GLOBAL_STUFF
-const juce::Colour AABlue      (69, 194, 177); // #45C2B1
-const juce::Colour AAPurple    (29,  28,  59); // #1D1C3B
+const juce::Colour BABlue      (22, 58, 62); // #37939e
+const juce::Colour BAWhite (87,87,87); // #dddddd
+const juce::Colour BABlack (0,0,0); // # 000000
 const juce::Colour JuceGrey    (0x32, 0x3e, 0x44);
-const juce::Colour AALightGrey (0xA8, 0xA9, 0xAD); // #A8A9AD
-const juce::Colour AAMediumGrey(0x75, 0x75, 0x75); // #757575
-const juce::Colour AADarkGrey      (0x30, 0x30, 0x30);
+const juce::Colour BADarkGrey      (0x30, 0x30, 0x30);
 
-const juce::Colour AADarkGreyAlpha ((uint8_t)0x30, (uint8_t)0x30, (uint8_t)0x30, 0.9f);
+const juce::Colour BADarkGreyAlpha ((uint8_t)0x30, (uint8_t)0x30, (uint8_t)0x30, 0.9f);
 
 const juce::Colour AppBackground(JuceGrey);
-const juce::Colour AreaBackground(AAPurple);
-const juce::Colour PopoutWindowBackground(AAPurple);
+const juce::Colour AreaBackground(BABlack);
+const juce::Colour PopoutWindowBackground(BABlack);
 #endif
 
 constexpr float BORDER_THICKNESS   = 2.0f;

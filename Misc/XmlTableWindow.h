@@ -6,7 +6,6 @@
 #include "Util/StringUtil.h"
 #include "Util/ErrorMessage.h"
 #include "Util/ErrorMessageWindow.h"
-#include "Util/Keys.h"
 #include "Util/GuiUtil.h"
 
 using namespace juce;
